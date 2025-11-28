@@ -1,0 +1,90 @@
+{
+  "name": "iws-laser-quote-app",
+<<<<<<< HEAD
+  "version": "1.0.15",
+  "description": "Independent Welding Services - IWS Laser Quote App",
+  "author": "Independent Welding Services LLC",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win nsis",
+    "pack": "electron-builder --dir"
+=======
+  "version": "1.0.14",
+  "description": "IWS Laser Quote Desktop App",
+  "main": "main.js",
+  "author": "Independent Welding Services",
+  "license": "MIT",
+
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win nsis"
+  },
+
+  "dependencies": {
+    "electron-log": "^5.1.2",
+    "electron-updater": "^6.1.8"
+  },
+
+  "devDependencies": {
+    "electron": "25.9.8",
+    "electron-builder": "^24.13.3"
+>>>>>>> 2b7a74855fe77022adc7fa4d2ccee6ac445be1f6
+  },
+
+  "build": {
+    "appId": "com.iws.laserquote",
+<<<<<<< HEAD
+    "productName": "IWS Laser Quote App",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!node_modules/*"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "icon.ico"
+    },
+
+    "publish": "always",
+
+=======
+    "productName": "IWS Laser Quote",
+    "directories": {
+      "output": "dist"
+    },
+>>>>>>> 2b7a74855fe77022adc7fa4d2ccee6ac445be1f6
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "JPIWS1241",
+<<<<<<< HEAD
+        "repo": "iws-laser-quote-app"
+      }
+    ]
+  },
+
+  "dependencies": {
+    "electron-log": "^5.2.0"
+  },
+
+  "devDependencies": {
+    "electron": "^25.9.8",
+    "electron-builder": "^24.13.3"
+=======
+        "repo": "-iws-laser-quote-app"
+      }
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": false
+    }
+>>>>>>> 2b7a74855fe77022adc7fa4d2ccee6ac445be1f6
+  }
+}
